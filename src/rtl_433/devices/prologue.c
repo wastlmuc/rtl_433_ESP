@@ -70,7 +70,7 @@ static int prologue_callback(r_device *decoder, bitbuffer_t *bitbuffer)
     humidity = ((b[3] & 0x0F) << 4) | (b[4] >> 4);
 
     /* clang-format off */
-    /* Adjust channel, such it is constant to avoid GW issue, when changing batteries */
+    /* Adjust id, such it is constant to avoid GW issue, when changing batteries */
     data = data_make(
             "model",         "",            DATA_STRING, "Prologue-TH",
             "subtype",       "",            DATA_INT,    type,
