@@ -22,6 +22,8 @@
     DECL(prologue)        \
 /* Add new personal decoders here. */
 #  define NUMOFDEVICES 1
+#  define NUMOF_OOK_DEVICES 1
+#  define NUMOF_FSK_DEVICES 0
 #endif
 
 #define DECL(name) extern r_device name;
