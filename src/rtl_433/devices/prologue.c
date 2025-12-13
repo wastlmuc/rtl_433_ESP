@@ -74,7 +74,7 @@ static int prologue_callback(r_device *decoder, bitbuffer_t *bitbuffer)
     data = data_make(
             "model",         "",            DATA_STRING, "Prologue-TH",
             "subtype",       "",            DATA_INT,    type,
-            "id",            "",            DATA_INT,    id,
+            "id",            "",            DATA_INT,    1,
             "channel",       "Channel",     DATA_INT,    channel,
             "battery_ok",    "Battery",     DATA_INT,    !!battery,
             "temperature_C", "Temperature", DATA_FORMAT, "%.2f C", DATA_DOUBLE, temp_raw * 0.1,
