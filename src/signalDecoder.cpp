@@ -86,7 +86,7 @@ void rtlSetup() {
     // This is a generated fragment from tools/update_rtl_433_devices.sh
       memcpy(&cfg->devices[0], &prologue, sizeof(r_device));
 #else
-    memcpy(&cfg->devices[0], &lacrosse_tx141x, sizeof(r_device));
+    memcpy(&cfg->devices[0], &prologue, sizeof(r_device));
 #endif
 
 #ifdef RTL_FLEX
